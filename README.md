@@ -1,8 +1,8 @@
-# Rod Locker BepInEx Edition
+# Rod Locker (BepInEx Edition)
 
-Adds a Rod Locker option at Blackstone Isle in DREDGE.
+BepInEx mod for DREDGE.
 
-The locker contains one of each Custom Rod variant, free to take once per save.
+Adds a Rod Locker button to Blackstone Isle. The locker contains one of each platform-colored Custom Rod variant, including the mobile iOS and Android rods. Each rod is free, uses the vanilla Custom Rod stats, and can only be taken once per save.
 
 ## Install
 
