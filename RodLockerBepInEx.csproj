@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>RodLockerBepInEx</AssemblyName>
+    <RootNamespace>RodLockerBepInEx</RootNamespace>
+    <NuGetAudit>false</NuGetAudit>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DredgeDir Condition="'$(DredgeDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\DREDGE</DredgeDir>
+    <DredgeManagedDir>$(DredgeDir)\DREDGE_Data\Managed</DredgeManagedDir>
+    <BepInExCoreDir Condition="'$(BepInExCoreDir)' == ''">$(DredgeDir)\BepInEx\core</BepInExCoreDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(DredgeManagedDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCoreDir)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCoreDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>$(DredgeManagedDir)\Cinemachine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>$(DredgeManagedDir)\Sirenix.Serialization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>$(DredgeManagedDir)\Unity.Addressables.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>$(DredgeManagedDir)\Unity.Localization.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>$(DredgeManagedDir)\Unity.ResourceManager.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(DredgeManagedDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(DredgeManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(DredgeManagedDir)\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(DredgeManagedDir)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(DredgeManagedDir)\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\legoless.rodlocker.playstation.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.playstation.png" />
+    <EmbeddedResource Include="Assets\legoless.rodlocker.xbox.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.xbox.png" />
+    <EmbeddedResource Include="Assets\legoless.rodlocker.switch.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.switch.png" />
+    <EmbeddedResource Include="Assets\legoless.rodlocker.steam.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.steam.png" />
+    <EmbeddedResource Include="Assets\legoless.rodlocker.gog.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.gog.png" />
+    <EmbeddedResource Include="Assets\legoless.rodlocker.ios.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.ios.png" />
+    <EmbeddedResource Include="Assets\legoless.rodlocker.android.png" LogicalName="RodLockerBepInEx.Assets.legoless.rodlocker.android.png" />
+  </ItemGroup>
+
+</Project>

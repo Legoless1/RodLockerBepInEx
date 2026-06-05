@@ -1,0 +1,9 @@
+{
+	"name": "Rod_Locker",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Legoless1/RodLockerBepInEx",
+	"description": "Adds a Rod Locker at Blackstone Isle containing seven free Custom Rod variants.",
+	"dependencies": [
+		"BepInEx-BepInExPack_x86-5.4.2100"
+	]
+}
